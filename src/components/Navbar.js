@@ -8,7 +8,7 @@ import styled from "styled-components";
 export default class Navbar extends Component {
   render() {
     return (
-      <navWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
+      <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
         {/* */}
         <Link to="/">
           <img src={logo} alt="store" className="navbar-brand" width="50px" />
@@ -16,7 +16,7 @@ export default class Navbar extends Component {
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5">
             <Link to="/" className="nav-link text-dark ">
-              商品
+              所有商品
             </Link>
           </li>
         </ul>
@@ -28,16 +28,19 @@ export default class Navbar extends Component {
             购物车
           </ButtonContainer>
         </Link>
-      </navWrapper>
+      </NavWrapper>
     );
   }
 }
 
-const navWrapper = styled.nav`
+const NavWrapper = styled.nav`
   background: var(--mainBlue) !important;
   .nav-link {
     color: var(--mainWhite) !important;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-transform: capitalize !important;
+  }
+  .nav-link:hover {
+    color: var(--lightBlue) !important;
   }
 `;

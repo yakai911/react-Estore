@@ -6,7 +6,7 @@ import { ProductConsumer } from "../context";
 export default class ProductList extends Component {
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <div className="py-5">
           <div className="container">
             <Title name="我们的" title="产品" />
@@ -22,7 +22,7 @@ export default class ProductList extends Component {
             </div>
           </div>
         </div>
-      </React.Fragment>
+      </Fragment>
     );
   }
 }
